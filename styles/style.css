@@ -273,6 +273,7 @@ section{
     height: 12rem;
     border-radius: .3rem;
     transition: .25s all;
+    position: relative;
 }
 
 .container__mkt,
@@ -306,8 +307,8 @@ section{
 }
 
 .button--modal{
-    position: relative;
-    top: 2rem;
+    position: absolute;
+    bottom: 1rem;
     border: none;
     color: #E02100;
     padding: .3rem .8rem;
@@ -371,7 +372,6 @@ section{
         right: 0;
         top: 100%;
         z-index: 10000;
-        background: rgb(32, 32, 0);
         transition: .3s all ;
     }
 
@@ -379,8 +379,11 @@ section{
         height: 100%;
         display: flex;
         flex-direction: column;
+        background: #262c37cb;
         justify-content: space-around;
         align-items: center;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
 
     .fa-whatsapp{
@@ -398,10 +401,35 @@ section{
     .active{
         transform: translateX(0);
     }
+
+
+
+
+    /* HOME  */
+
+
 }
 
 
 
 @media screen and (max-width: 450px) {
-    
+    /* MENU */
+    .navbar__top{
+        padding: 0.45rem 10%;
+    }
+
+
+    /* HOME */
+    .text__buttons a{
+        display: inline-block;
+    }
+
+
+
+
+    /* SKILLS */
+    .container__p{
+        font-size: .85rem;
+        padding: 0 1rem;
+    }
 }
