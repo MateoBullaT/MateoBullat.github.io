@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    background: #191919;
+}
+
+/*FONT RULES*/
+p{
+    font-size: 1.1rem;
+}
+
+/*GLOBAL PROPERTIES*/
+a{
+    text-decoration: none;
+}
+
+.button--normal{
+    position: relative;
+    padding: .5rem 1rem;
+    transition: .5s all;
+    border-radius: .25rem;
+}
+
+.button1{
+    color: #191919;
+    background: linear-gradient(to left,#E02100, #E06400);
+    transition: .5s all;
+}
+
+.button1:hover{
+    color: #fff;
+    transition: .5s;
+}
+
+.button2{
+    color: rgba(255, 255, 255, 0.4);
+    background: #262c37;
+    border: none;
+}
+
+.button2:hover{
+    color: rgba(255, 255, 255);
+}
+
+.button2 span{
+    display: block;
+    position: absolute;
+    background: #E02100;
+}
+
+.button2 span:nth-child(1){
+    left:0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+.button2:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+.button2 span:nth-child(2){
+    left:0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.button2:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+
+.intersection{
+    width: 60vw;
+    height: .25rem;
+    background: linear-gradient(to left,#E02100, #f04c00);
+    border-radius: 5rem 5rem 5rem 5rem;
+    margin: auto;
+}
+
+
+section{
+    padding: 2.5rem 4%;
+}
+
+
+
+
+
+
+
+
+
+
+/* NAV BAR */
+.navbar__top{
+    background: #262c37;
+    position: fixed;
+    z-index: 100000;
+    transition: .2s all;
+    transform: translateY(-110%);
+    width: 100%;
+    padding: .7rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav--active{
+    transition: .5s all;
+    transform: translateY(0);
+}
+
+.navbar__logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo__image{
+    border-radius: 50%;
+    height: 6vh;
+}
+
+.logo__text{
+    font-weight: bold;
+    margin: 0 .25em;
+}
+
+/* .navbar{
+ */
+
+ .navbar__list{
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+ }
+
+ .navbar__item{
+     padding: 0 1em;
+     font-weight: 300;
+ }
+
+.navbar__item--underline .fas{
+     padding: .5rem;
+     margin: .25em;
+     background: linear-gradient(to right, #E02100, #E06400);
+     border-radius: 50%;
+ }
+
+
+ .button{
+     padding: .50rem .75rem;
+     background: #25d602;
+     border-radius: 50%;
+ }
+
+ .fa-whatsapp{
+     font-size: 2rem;
+ }
+
+ .menu__toggle{
+     background: none;
+     cursor: pointer;
+    display: none;
+ }
+
+ .fa-bars,
+ .fa-times{
+     background: none;
+     color: #E02100;
+     font-size: 2rem;
+ }
+
+
+
+
+
+ /* HOME */
+.home{
+    max-height: 100%;
+}
+
+.home__text{
+    max-width: 70vw;
+    margin: auto;
+    text-align: center;
+}
+
+.home__text__h1{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.home__text__h1 span{
+    font-weight: bolder;
+    background: linear-gradient(to right, #E02100, #E06400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.text__buttons{
+    padding: 2.5rem 0;
+}
+
+.text__buttons a{
+    margin: 5% 2rem;
+}
+
+
+.home__images{
+    padding: 5rem 0 2rem 0;
+}
+
+.home__images{
+    display: flex;
+    justify-content: center;
+}
+
+.home__mateo{
+    width: 50vw;
+}
+
+
+
+
+
+
+
+
+
+/* SKILLS */
+.skills__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.skills__h3{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.skill__container{ 
+    background: url(/image/background.png);
+    background-size: cover;
+    opacity: .6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    height: 12rem;
+    border-radius: .3rem;
+    transition: .25s all;
+}
+
+.container__mkt,
+.container__ux-ui{
+    background: url(/image/background2.png);
+}
+
+.skill__container:hover{
+    opacity: 1;
+}
+
+.skill__container__title{
+    display:flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.title--border{
+    font-weight: 500;
+}
+
+.container__image{
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.container__p{
+    text-align: left;
+    padding-left: .85rem;
+    font-size: 1rem;
+}
+
+.button--modal{
+    position: relative;
+    top: 2rem;
+    border: none;
+    color: #E02100;
+    padding: .3rem .8rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.button--modal:active{
+    padding: .26rem .75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .navbar__top{
+        padding: .9rem 5%;
+    }
+
+    .navbar{
+        transform: translateX(100%);
+        position: fixed;
+        width: 100%;
+        height: 90vh;
+        right: 0;
+        top: 100%;
+        z-index: 10000;
+        background: rgb(32, 32, 0);
+        transition: .3s all ;
+    }
+
+    .navbar__list{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .fa-whatsapp{
+        font-size: 1.5rem;
+    }
+
+    .menu__toggle{
+        display: block;
+    }
+
+    .menu__toggle i{
+        font-size: 1.75rem;
+    }
+
+    .active{
+        transform: translateX(0);
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    
+}
