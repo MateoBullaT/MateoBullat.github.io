@@ -5,3 +5,4 @@ Puedes seguir mirando mis demás repositorios [aquí](https://github.com/MateoBu
 
 ![enter image description here](https://cdn140.picsart.com/346537031076211.png)
 
+Y si, esta pagina no esta nada cerca de ser la version final, por ello posiblemente la encontraras con todo CSS y JS nativo (de momento).
